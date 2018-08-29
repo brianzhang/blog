@@ -1,9 +1,9 @@
 # 头部菜单，title: link
 menu:
-  Whoami: /
+  About: /about/
   Github: https://github.com/brianzhang
   Twitter: https://twitter.com/Brian_ZhangFan
-  WeChat: zhangfanbrian
+  WeChat: habanerna
 # 是否显示目录
 TOC: false
 
@@ -16,7 +16,7 @@ mp3:
   - http://link.hhtjim.com/qq/001faIUs4M2zna.mp3
 
 # 首页封面图, 为空时取文章的cover作为封面
-welcome_cover: # /img/welcome-cover.jpg
+welcome_cover: /img/8.jpg
 
 # 默认文章封面图
 cover: /img/cover.jpg
