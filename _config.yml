@@ -83,3 +83,4 @@ deploy:
 admin:
   username: brian
   password_hash: 63be684aaf1f018a2417a8efe31a1b16bd3de70f
+  # secret: zhangfan
