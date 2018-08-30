@@ -26,7 +26,72 @@
 
 <body class="loading">
     <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="icon-home image-icon" href="javascript:;"></a>
+    <div title="播放/暂停" class="icon-play"></div>
+    <h3 class="subtitle">javascript正则表达式提取指定字符</h3>
+    <div class="social">
+        <!--<div class="like-icon">-->
+            <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+        <!--</div>-->
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">javascript正则表达式提取指定字符</h1>
+        <div class="stuff">
+            <span>八月 19, 2013</span>
+            
+  <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/js/">js</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> url = <span class="string">"http://v.youku.com/v_show/id_XMjM0OTI4NzMy.html"</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getInfo</span>(<span class="params">source,start,end</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> oReg=<span class="keyword">new</span> <span class="built_in">RegExp</span>(start+<span class="string">".*?"</span>+end,<span class="string">"img"</span>);</span><br><span class="line">  <span class="keyword">var</span> oRegStart=<span class="keyword">new</span> <span class="built_in">RegExp</span>(start,<span class="string">"g"</span>);</span><br><span class="line">  <span class="keyword">var</span> oRegEnd=<span class="keyword">new</span> <span class="built_in">RegExp</span>(end,<span class="string">"g"</span>);</span><br><span class="line">  <span class="keyword">return</span> source.match(oReg).join(<span class="string">"="</span>).replace(oRegStart,<span class="string">""</span>).replace(oRegEnd,<span class="string">""</span>).split(<span class="string">"="</span>);</span><br><span class="line">&#125;</span><br><span class="line">getInfo(url, <span class="string">"id_"</span>, <span class="string">".html"</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; XMjM0OTI4NzMy</span><br></pre></td></tr></table></figure>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        <li title='0' data-url='http://link.hhtjim.com/163/5146554.mp3'></li>
+                    
+                        <li title='1' data-url='http://link.hhtjim.com/qq/001faIUs4M2zna.mp3'></li>
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
     
+</div>
+
+
+    </div>
+</div>
 </body>
 <script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>

@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="" class="loading">
+<html lang="en" class="loading">
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -11,7 +11,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="netmad.me,"> 
+    <meta name="description" content="netmad.me, brian.netmad,  brianzhang,
+随着前端框架的不断成熟，MVVM已成为主流的WEB前端开发框架，今天我给大家带来之前项目中的vue的实践
+
+
+
+项目介绍，这个项目主要是app内嵌h5，前后端分离都是共识了，前后端分离不知大家有没,"> 
     <meta name="author" content="brian"> 
     <link rel="alternative" href="atom.xml" title="brian" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png?20180820"> 
@@ -75,7 +80,7 @@
 <ol start="2">
 <li>graphql 接口实现</li>
 </ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// graphql.js 代码片段</span></span><br><span class="line"><span class="keyword">const</span> postGraphql = <span class="function">(<span class="params">query, data</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> Prom(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    	ajax.post(&#123;</span><br><span class="line">        	url: &lt;url&gt;,</span><br><span class="line">            data: &#123;</span><br><span class="line">            	query: query,</span><br><span class="line">                ...data</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;).then((&#123; data &#125;) =&gt; &#123;</span><br><span class="line">        	resolve(data)</span><br><span class="line">        &#125;).catch(e =&gt; &#123;</span><br><span class="line">        	reject(e)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">export &#123;</span><br><span class="line">	postGraphql</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// graphql.js 代码片段</span></span><br><span class="line"><span class="keyword">const</span> postGraphql = <span class="function">(<span class="params">query, data</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> Prom(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    	ajax.post(&#123;</span><br><span class="line">        	url: <span class="xml"><span class="tag">&lt;<span class="name">url</span>&gt;</span>,</span></span><br><span class="line"><span class="xml">            data: &#123;</span></span><br><span class="line"><span class="xml">            	query: query,</span></span><br><span class="line"><span class="xml">                ...data</span></span><br><span class="line"><span class="xml">            &#125;</span></span><br><span class="line"><span class="xml">        &#125;).then((&#123; data &#125;) =&gt; &#123;</span></span><br><span class="line"><span class="xml">        	resolve(data)</span></span><br><span class="line"><span class="xml">        &#125;).catch(e =&gt; &#123;</span></span><br><span class="line"><span class="xml">        	reject(e)</span></span><br><span class="line"><span class="xml">        &#125;)</span></span><br><span class="line"><span class="xml">    &#125;)</span></span><br><span class="line"><span class="xml">&#125;</span></span><br><span class="line"><span class="xml">export &#123;</span></span><br><span class="line"><span class="xml">	postGraphql</span></span><br><span class="line"><span class="xml">&#125;</span></span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li>实现调用</li>
 </ol>
