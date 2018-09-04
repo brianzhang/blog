@@ -65,7 +65,7 @@ tags:
 
 > 配置完后，重新加载nginx配置
 
-访问 /lua 这个地址，会发现页面打开后会看到 "hello, lua openresty" 这样一个页面
+访问 /lua 这个地址，会发现页面打开后会看到 "hello, lua openresty" 这样一个页面[demo](https://netmad.me/lua)
 
 好啦，一个简单的openresty + nginx的应用就搞定了
 
@@ -74,4 +74,3 @@ tags:
 [OpenResty Git](https://github.com/openresty/)
 
 [agentzh-nginx](https://openresty.org/download/agentzh-nginx-tutorials-en.html)
-
