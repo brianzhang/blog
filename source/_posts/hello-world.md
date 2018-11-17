@@ -1,5 +1,8 @@
 title: 开篇
-date: 2018-08-29 16:33:19
+tags: []
+categories: []
+author: Brian
+date: 2010-05-11 14:22:00
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
